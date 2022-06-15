@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('admin/dashboard');
+    return view('grid');
+});
+
+Route::get('/user/create', function () {
+    return view('create');
+});
+
+Route::get('/user/edit', function () {
+    return view('create');
+});
+
+Route::get('/user/delete', function () {
+    return view('create');
 });
